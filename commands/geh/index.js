@@ -37,7 +37,7 @@ module.exports = {
             });
         } catch (error) {
             console.error(error);
-            await sock.sendMessage(from, { text: '❌ *Fehler:* Entweder bin ich kein Admin, oder der Zauber war gegen diesen Nutzer wirkungslos.' }, { quoted: msg });
+            await sock.sendMessage(from, { text: '❌ *Fehler:* Bot kein Admin oder Nutzer Admin!' }, { quoted: msg });
         }
     }
 };
